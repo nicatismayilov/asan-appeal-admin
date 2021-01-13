@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "SF_PRO";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+000-5FF;
+  src: local("SF_PRO"),
+    // url("../assets/fonts/sf-pro-text-bold.woff") format("woff2"),
+    url("../assets/fonts/sf-pro-bold.woff") format("woff");
+}
