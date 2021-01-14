@@ -1,11 +1,11 @@
-import Test2 from "components/Test2";
+import Login from "views/Login";
 
 import "./index.scss";
 
 const App: React.FC = () => {
 	return (
 		<div className='app'>
-			<Test2 />
+			<Login />
 		</div>
 	);
 };
