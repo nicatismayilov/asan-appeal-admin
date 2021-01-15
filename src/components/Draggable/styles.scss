@@ -1,0 +1,50 @@
+.draggable {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  background: linear-gradient(to bottom, #8adeda, #9be1de);
+  border-radius: 5px;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s, opacity 0.5s;
+  will-change: transform;
+  cursor: grab;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.draggable > .draggable-content {
+  will-change: transform;
+  height: 100%;
+  width: 100%;
+  margin: 0vw 0;
+  background-image: url("https://mixkit.imgix.net/art/preview/mixkit-woman-with-a-handbag-walking-her-small-dog-207-original-large.png?auto=format%2Ccompress&dpr=2&h=200&q=80&q=50");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  // transition: box-shadow 150ms;
+}
+
+div.dragging {
+  cursor: grabbing;
+}
+
+div.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.draggable:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+}
+
+.spotlight {
+  position: absolute;
+  z-index: 10000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  opacity: 15%;
+  // transform: translate(-50%, -50%);
+}
